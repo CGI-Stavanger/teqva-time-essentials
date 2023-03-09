@@ -1,0 +1,214 @@
+<entryForm scriptid="custform_cgi_forms_timesheet" standard="STANDARDTIMESHEETFORM">
+  <name>TEQVA Timesheet Form</name>
+  <recordType>TIMESHEET</recordType>
+  <inactive>F</inactive>
+  <preferred>T</preferred>
+  <storedWithRecord>F</storedWithRecord>
+  <mainFields>
+    <fieldGroup scriptid="primaryinformation">
+      <label>Primary Information</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>CUSTOMFORM</id>
+          <label>Custom Form</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>EMPLOYEE</id>
+          <label>Employee</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <label>Start Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <label>End Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TRANDATE</id>
+          <label>Week Of</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>APPROVALSTATUS</id>
+          <label>Approval Status</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>SUBMITTEDHOURS</id>
+          <label>Submitted Hours</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>REJECTEDHOURS</id>
+          <label>Rejected Hours</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>PLANNEDHOURS</id>
+          <label>Planned Hours</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>ALLOCATEDHOURS</id>
+          <label>Allocated Hours</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>WORKCALENDARHOURS</id>
+          <label>Work Calendar Hours</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>LOCKSTATUS</id>
+          <label>Timesheet Lock Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <fieldGroup scriptid="classification">
+      <label>Classification</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>SUBSIDIARY</id>
+          <label>Subsidiary</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <defaultFieldGroup/>
+  </mainFields>
+  <actionbar>
+    <buttons>
+      <button>
+        <id>APPROVEALLPENDING</id>
+        <label>Approve All Pending</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>COPYTIMESHEET</id>
+        <label>Copy Previous Week</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>IMPORTPLANNEDTIME</id>
+        <label>Import Planned Time</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>NEXT</id>
+        <label>Next Week</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>PREV</id>
+        <label>Prev Week</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>REJECTALLPENDING</id>
+        <label>Reject All Pending</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>REJECTALLPENDINGWITHNOTE</id>
+        <label>Reject All Pending With Note</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>RETRACT</id>
+        <label>Retract</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>SAVE</id>
+        <label>Save</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>SAVESUBMIT</id>
+        <label>Submit</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>UNLOCKTIMEPERIOD</id>
+        <label>Unlock Time Period</label>
+        <visible>T</visible>
+      </button>
+    </buttons>
+    <menu>
+      <menuitem>
+        <id>DELETE</id>
+        <label>Delete</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>PRINT</id>
+        <label>Print</label>
+        <visible>T</visible>
+      </menuitem>
+    </menu>
+  </actionbar>
+</entryForm>

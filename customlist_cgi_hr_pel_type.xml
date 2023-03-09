@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_cgi_hr_pel_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Payelement Type</name>
+  <customvalues>
+    <customvalue scriptid="val_26196_7083689_sb1_423">
+      <isinactive>F</isinactive>
+      <value>Time</value>
+    </customvalue>
+    <customvalue scriptid="val_26197_7083689_sb1_188">
+      <isinactive>F</isinactive>
+      <value>Allowance</value>
+    </customvalue>
+    <customvalue scriptid="val_26198_7083689_sb1_872">
+      <isinactive>F</isinactive>
+      <value>Expense</value>
+    </customvalue>
+    <customvalue scriptid="val_26199_7083689_sb1_798">
+      <isinactive>F</isinactive>
+      <value>Addition</value>
+    </customvalue>
+    <customvalue scriptid="val_26200_7083689_sb1_667">
+      <isinactive>F</isinactive>
+      <value>Deduction</value>
+    </customvalue>
+    <customvalue scriptid="val_26201_7083689_sb1_604">
+      <isinactive>F</isinactive>
+      <value>Fixed</value>
+    </customvalue>
+  </customvalues>
+</customlist>
